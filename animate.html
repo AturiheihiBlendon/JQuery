@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Untitled Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $("document").ready(function(){
+                    $("#moveleft").click(function(){
+                        $("#textBox").animate({marginLeft: "200px"},"fast");
+                    });
+
+                    $("#biggerfont").click(function(){
+                        $("#textBox").animate({fontSize: "60px"},"fast");
+                    });
+
+                    $("#bigger").click(function(){
+                        $("#textBox").animate({width: "5000px"},"fast");
+                    });
+
+                    $("#animateFont").click(function(){
+                        $("#textBox").animate({fontSize: "100px"},3000);
+                    });
+            });
+        </script>
+        <style>
+        #textBox{
+            background-color: gray;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            margin-top: 20px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <a href="#" id="moveleft">Move</a> | <a href="#" id="bigger">Enlarge</a> | <a href="#" id="animateFont">Animate font</a> | <a href="#" id="biggerfont">Enlarge font</a>
+        <div id="textBox">
+            Lionel Andrés Messi, also known as Leo Messi, is an Argentine professional footballer <br>who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team
+
+            
+        </div>
+           </body>
+</html>
